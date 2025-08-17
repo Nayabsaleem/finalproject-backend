@@ -19,7 +19,7 @@ module.exports = function (req, res, next) {
     // ✅ Verify JWT
     const decoded = jwt.verify(
       token,
-      process.env.JWT_SECRET || 'replace_this_with_a_strong_secret'
+      process.env.JWT_SECRET || 'mysupersecretkey123'
     );
 
     // ✅ Attach user info to request (req.user ka use tum profile routes me kar rahi ho)
